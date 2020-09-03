@@ -11,6 +11,9 @@ describe('isAnagram - basic functionalities', ()=>{
         const expected = false;
         const actual = isAnagram('dog', 2)
         expect(actual).to.equal(expected)
+
+        const actual2 = isAnagram([1,2], '1,2')
+        expect(actual2).to.equal(expected)
     })
     it('should return true if both arguments have same quantity and value of letters', ()=>{
         const expected = true;
