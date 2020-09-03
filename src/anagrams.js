@@ -7,7 +7,7 @@ export const isAnagram = (string1, string2) => {
   if (typeof string1 !== "string" || typeof string2 !== "string") return false;
 
   let letters1 = string1.replace(/\W+/g, '').toLowerCase().split("").sort().join("");
-  let letters2 = string2.replace(/\W+/g, '').split("").sort().join("");
+  let letters2 = string2.replace(/\W+/g, '').toLowerCase().split("").sort().join("");
 
   return letters1 === letters2 ? true : false;
 };
